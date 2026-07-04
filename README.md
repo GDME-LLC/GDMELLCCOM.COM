@@ -15,4 +15,5 @@ This project contains a clean, modern one-page portfolio layout with sections fo
 
 1. Replace placeholder project cards with your actual apps and websites.
 2. Update links to your GitHub repositories and hosted websites.
-3. Adjust text and branding to reflect your voice, services, and results.
+3. Add the portfolio logo image at `assets/logo-signature.png` to replace the header text with your custom brand image.
+4. Adjust text and branding to reflect your voice, services, and results.
