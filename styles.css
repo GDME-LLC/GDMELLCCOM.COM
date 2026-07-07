@@ -188,6 +188,12 @@ textarea {
 
 .hero-panel {
   display: grid;
+  align-content: center;
+}
+
+.service-split {
+  display: grid;
+  gap: 1rem;
 }
 
 .panel-card {
@@ -205,6 +211,26 @@ textarea {
 .panel-card h2 {
   font-size: clamp(1.75rem, 2vw, 2.3rem);
   margin: 0;
+}
+
+.panel-card--residential {
+  background: linear-gradient(135deg, rgba(95, 134, 255, 0.16), rgba(255, 255, 255, 0.025));
+}
+
+.panel-card--technical {
+  background: linear-gradient(135deg, rgba(211, 118, 255, 0.16), rgba(255, 255, 255, 0.025));
+}
+
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.text-link::after {
+  content: "→";
 }
 
 .panel-stats {
@@ -232,6 +258,22 @@ textarea {
 .section-header {
   max-width: 680px;
   margin-bottom: 2.5rem;
+}
+
+.intro-panel {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 24px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.intro-panel--alt {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.intro-panel p {
+  margin: 0;
 }
 
 .service-grid,
@@ -358,6 +400,10 @@ textarea {
   .hero-grid {
     grid-template-columns: 1.1fr 0.9fr;
     align-items: center;
+  }
+
+  .service-split {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .projects-grid {
