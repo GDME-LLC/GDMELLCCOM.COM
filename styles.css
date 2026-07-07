@@ -82,9 +82,10 @@ textarea {
 }
 
 .brand-logo {
-  height: 32px;
+  height: 36px;
   width: auto;
   display: block;
+  object-fit: contain;
 }
 
 .visually-hidden {
