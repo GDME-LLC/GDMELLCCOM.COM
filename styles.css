@@ -307,6 +307,35 @@ textarea {
   margin: 0;
 }
 
+.social-link-row {
+  margin-top: 1rem;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.8rem 1rem;
+  border-radius: 999px;
+  background: rgba(59, 89, 152, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #f8fbff;
+  font-weight: 600;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.social-link:hover {
+  transform: translateY(-1px);
+  background: rgba(59, 89, 152, 0.24);
+}
+
+.social-link svg {
+  width: 1.15rem;
+  height: 1.15rem;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
 .service-grid,
 .projects-grid {
   display: grid;
